@@ -24,6 +24,7 @@ SMP_DIR  = r"D:\coca\smp"
 M5_DIR   = r"D:\coca\smp\m5"
 CKPT_DIR = os.path.join(M5_DIR, "checkpoints")
 LOG_PATH = os.path.join(M5_DIR, "train_log.json")
+os.makedirs(CKPT_DIR, exist_ok=True)
 
 EPOCHS       = 100
 BATCH_SIZE   = 8
